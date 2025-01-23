@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms and Table</title>
+</head>
+
+<body>
+    <form>
+        <p>
+            <label for="name">Name</label><br> <input id="name" title="Enter your first and last names" type="text"
+                placeholder="Enter your name" />
+        </p>
+        <p>
+            <label>Phone<br>
+                <input type="tel" placeholder="Enter your phone number" />
+            </label>
+
+        </p>
+        <p>
+            <input type="email" placeholder="Enter your email" />
+        </p>
+        <p>
+            <input title="Your password must be greater than 8 characters, 5 uppercase letters, 5 lowercase letters"
+                type="password" placeholder="Enter your password" />
+        </p>
+        <p>
+            <select title="A select box for you to choose your state">
+                <option value="">Select your state</option>
+                <option value="Abia">Abia</option>
+                <option value="Adamawa">Adamawa</option>
+                <option value="Akwa-Ibom">Akwa-Ibom</option>
+                <option value="Anambra">Anambra</option>
+                <option value="Bauchi">Bauchi</option>
+            </select>
+        </p>
+        <p>
+            <input type="radio" value="Male" name="gender" />Male
+            <input type="radio" value="Female" name="gender" />Female
+        </p>
+        Select your courses for the semester<br />
+        <input type="checkbox" name="courses" value="HTML" />HTML<br />
+        <input type="checkbox" name="courses" value="CSS" />CSS<br />
+        <input type="checkbox" name="courses" value="javaScript" />javaScript<br />
+        <input type="checkbox" name="courses" value="ReactJs" />ReactJs
+
+        <p>
+            <textarea cols="10" rows="10" placeholder="Other details"></textarea>
+        <p>
+            <input type="submit" value="SUBMIT">
+            <input type="reset" value="RESET">
+        </p>
+
+    </form>
+</body>
+
+</html>
