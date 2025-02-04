@@ -1,0 +1,25 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: orange;
+}
+
+form {
+  background-color: aqua;
+  color: red;
+}
+
+.first-heading {
+  color: red;
+  text-align: left;
+}
+
+.second-heading {
+  color: blue;
+  text-align: right;
+}
+
+.welcome-h1 {
+  font-size: 20px;
+}
