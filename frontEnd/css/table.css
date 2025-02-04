@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(
+      to right,
+      hwb(251 10% 0% / 0.7),
+      rgba(25, 255, 255, 0.7)
+    ),
+    url("../images/calli.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* height: 100vh; */
+}
+
+#callistus {
+  width: 300px;
+  height: 200px;
+  border-style: dashed;
+  border-width: thick;
+  text-align: center;
+  border-color: white;
+  margin: auto;
+}
+
+#wealthy {
+  color: white;
+  border: 5px solid red;
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  margin: auto;
+  border-top-right-radius: 600px;
+  border-top-left-radius: 600px;
+  text-align: center;
+  vertical-align: middle;
+}
