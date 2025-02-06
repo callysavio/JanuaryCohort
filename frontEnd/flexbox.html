@@ -9,11 +9,81 @@
 
 <body>
     <div id="container">
-        <div class="child">1</div>
-        <div class="child">2</div>
-        <div class="child">3</div>
+        <div class="child" id="child2">2</div>
+        <div class="child" id="child3">3</div>
     </div>
+    <div class="child" id="child1">1 - I am Sticky</div>
 
+    <p>I am Callistus</p>
+    <div>
+        Responsive Flexbox
+        You learned from the CSS Media Queries chapter that you can use media queries to create different layouts for
+        different
+        screen sizes and devices.
+
+        Laptop and Desktops:
+
+        1
+        2
+        3
+        Mobile phones and Tablets:
+
+        1
+        2
+        3
+
+        For example, if you want to create a two-column layout for most screen sizes, and a one-column layout for small
+        screen
+        sizes (such as phones and tablets), you can change the flex-direction from row to column at a specific
+        breakpoint (800px
+        in the example below):
+
+        Example
+        .flex-container {
+        display: flex;
+        flex-direction: row;
+        }
+
+        /* Responsive layout - makes a one column layout instead of a two-column layout */
+        @media (max-width: 800px) {
+        .flex-container {
+        flex-direction: column;
+        }
+        }
+
+        Another way is to change the percentage of the flex property of the flex items to create different layouts for
+        different
+        screen sizes. Note that we also have to include flex-wrap: wrap; on the flex container for this example to work:
+
+        Example
+        .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+        .flex-item-left {
+        flex: 50%;
+        }
+
+        .flex-item-right {
+        flex: 50%;
+        }
+
+        /* Responsive layout - makes a one column layout instead of a two-column layout */
+        @media (max-width: 800px) {
+        .flex-item-right, .flex-item-left {
+        flex: 100%;
+        }
+        }
+
+        ADVERTISEMENT
+
+        Responsive Image Gallery using Flexbox
+        Use flexbox to create a responsive image gallery that varies between four, two or full-width images, depending
+        on screen
+        size:
+
+    </div>
     <style>
         * {
             margin: 0;
@@ -21,16 +91,31 @@
         }
 
         #container {
-            width: 100%;
+            width: 98%;
+            border: 2px solid red;
             display: flex;
-            justify-content: space-around;
+            flex-flow: row wrap;
+            /* justify-content: space-evenly; */
+            margin: auto;
+            height: 250px;
+            align-items: baseline;
         }
 
         .child {
-            width: 31%;
-            height: 199px;
+            width: 25%;
+            height: 180px;
             background-color: blue;
             color: white;
+            text-align: center;
+            padding-top: 20px;
+            border: 1px solid black;
+        }
+
+        #child1 {
+            position: sticky;
+            top: 10px;
+            /* top: 200px; */
+            border: 2px solid orangered;
         }
     </style>
 </body>

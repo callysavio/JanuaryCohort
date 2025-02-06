@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML FORMS</title>
+</head>
+
+<body>
+    <form action="/formBackend.php" method="POST">
+        <p>
+            <label>School
+                <input value="ItskillsCenter" type="text" placeholder="Enter your name" id="name" readonly />
+            </label>
+        </p>
+        <p>
+            <label>Name
+                <input type="text" placeholder="Enter your name" id="name" required />
+            </label>
+        </p>
+
+        <p>
+            <label>Email
+                <input type="email" placeholder="Enter your Email" id="email" required />
+            </label>
+        </p>
+
+        <p>
+            <label>Password
+                <input type="password" placeholder="Enter your password" id="password" />
+            </label>
+        </p>
+
+        <p>Gender
+            <input type="radio" id="gender" name="gender" value="female" /> Male
+            <input type="radio" id="gender" name="gender" value="female" />Female
+        </p>
+
+        <p>Your Skills
+            <input type="checkbox" id="skills" name="skills" value="HTML" />HTML
+            <input type="checkbox" id="skills" name="skills" value="CSS" />CSS
+            <input type="checkbox" id="skills" name="skills" value="JavaScript" />JavaScript
+        </p>
+
+        <p>
+            <input type="submit" id="submit-button" value="SUBMIT" />
+            <input type="reset" id="reset-button" value="CLEAR FORM" />
+        </p>
+    </form>
+</body>
+
+</html>
